@@ -1,0 +1,42 @@
+.navigation{
+    
+    background: rgb(0,212,255);
+    background: linear-gradient(21deg, rgba(0,212,255,0.6561975131849616) 46%, rgba(9,90,121,1) 91%);
+
+    &__logo{
+        width: 35%;
+        justify-self: start;
+    }
+
+    &__item{
+        
+        font-size: 1.2rem;
+
+        &:hover{
+            -webkit-animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-ver-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+        }
+
+        @-webkit-keyframes scale-up-ver-center {
+            0% {
+              -webkit-transform: scaleY(0.4);
+                      transform: scaleY(0.4);
+            }
+            100% {
+              -webkit-transform: scaleY(1);
+                      transform: scaleY(1);
+            }
+          }
+          @keyframes scale-up-ver-center {
+            0% {
+              -webkit-transform: scaleY(0.4);
+                      transform: scaleY(0.4);
+            }
+            100% {
+              -webkit-transform: scaleY(1);
+                      transform: scaleY(1);
+            }
+          }
+          
+    }
+}
